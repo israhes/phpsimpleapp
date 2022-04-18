@@ -2,4 +2,5 @@
 .git/
 error_log
 /vendor/
+/includes/config.php
 
