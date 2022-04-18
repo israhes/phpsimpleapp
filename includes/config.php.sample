@@ -1,0 +1,50 @@
+<?php
+// Error reporting
+error_reporting(E_ALL ^ E_NOTICE);
+ini_set('display_errors',1);
+
+// Set Time zone
+date_default_timezone_set('America/Guatemala');
+
+// Some defaults
+define('BASE_URL', 'https://desarrollo.iguate.com/crm-zugueme');
+define('PATH', '/var/www/html/crm-zugueme');
+define('APP_DOMAIN', 'desarrollo.iguate.com');
+define('PASSWORD_DEFAULT', 12);
+
+// Pagination
+define('MAX_LIMIT', 9); // Should be steps by 3
+define('MAX_PAGES', 2);
+define('RELATED_PRODS', 8); // How many related products are we goin to show
+
+// MySQL
+define('DB_TYPE', 'mysql');
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'crmzugueme');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'qa2GWQdE83vV!');
+define('DB_FREEZE', false);
+
+// Debug
+define('APP_DEBUG', true);
+define('SENDMAIL', true);
+
+// Mobile Metadata
+define('APP_NAME','Zugueme Docs');
+define('APP_AUTHOR','iGuate');
+define('APP_DESCRIPTION','An app for managing docs');
+define('APP_THUMB','');
+define('APP_ADMIN','admin@iguate.com');
+
+// Google Recaptcha
+define('APP_RECAPTCHA_SITE', '');
+define('APP_RECAPTCHA_SECRET', '');
+
+define('EMAIL_LOGO', 'logo.png'); // Logo para email
+define('EMAIL_COLOR', '#BCBEC0'); // Color del fondo para email
+
+// INCLUDES
+require 'vendor/Medoo.php';
+include 'functions.php';
+include 'app.php';
+

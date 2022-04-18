@@ -1,0 +1,7 @@
+{
+	"name": "A simple php app",
+	"require": {
+		"catfan/medoo": "2.1.*",
+		"phpmailer/phpmailer": "^6.5"
+	}
+}
